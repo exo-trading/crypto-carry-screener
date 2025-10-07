@@ -165,7 +165,7 @@ def generate_website():
         json.dump(data, f)
 
     # Copy the funding_data_all_coins.csv to docs (optional)
-    df.to_csv('docs/funding_data_all_coins.csv', index=False)
+    df.to_csv('docs/funding_data_temp.csv', index=False)
 
     print("Website data generated successfully.")
 
