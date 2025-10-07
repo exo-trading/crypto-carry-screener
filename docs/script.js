@@ -817,7 +817,7 @@ function loadChartData(coin, range) {
         
         // Now fetch the CSV file to get hourly data
         $.ajax({
-            url: '../funding_data_all_coins.csv', // Try to access the file in the root directory
+            url: 'https://raw.githubusercontent.com/exo-trading/crypto-carry-screener/main/funding_data_all_coins.csv', // Try to access the file in the root directory
             dataType: 'text',
             success: function(csvData) {
                 console.log("CSV data loaded successfully");
@@ -1713,7 +1713,7 @@ function loadVolumeData(coin, range) {
     
     // Fetch the CSV file to get volume data
     $.ajax({
-        url: '../ohlcv_data_main.csv', // Access the volume data file with the correct name
+        url: 'https://raw.githubusercontent.com/exo-trading/crypto-carry-screener/main/ohlcv_data_main.csv', // Access the volume data file with the correct name
         dataType: 'text',
         success: function(csvData) {
             console.log("Volume CSV data loaded successfully");
@@ -2870,7 +2870,7 @@ function loadPriceData(coin, range) {
     
     // Fetch the CSV file to get price data (from same file as volume data)
     $.ajax({
-        url: '../ohlcv_data_main.csv',
+        url: 'https://raw.githubusercontent.com/exo-trading/crypto-carry-screener/main/ohlcv_data_main.csv',
         dataType: 'text',
         success: function(csvData) {
             console.log("Price CSV data loaded successfully");
