@@ -5,7 +5,7 @@ from datetime import datetime, timezone, timedelta
 
 def generate_website():
     # Load the funding data
-    df = pd.read_csv('funding_data_main.csv')
+    df = pd.read_csv('funding_data_all_coins.csv')
     
     # Load the volume data
     try:
