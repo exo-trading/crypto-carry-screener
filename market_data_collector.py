@@ -239,7 +239,7 @@ def collect_funding_data():
     Main function to collect funding data.
     """
     # Initialize an empty DataFrame or read existing data
-    filename = 'funding_data_main.csv'
+    filename = 'funding_data_all_coins.csv'
     try:
         existing_df = pd.read_csv(filename)
         print(f"Loaded existing funding data with {len(existing_df)} rows.")
