@@ -706,6 +706,11 @@ function showCoinInfoPopup(coin) {
         loadVolumeData(coin, selectedChartRange);
     }
     
+    // If price toggle is active, also load price data
+    if (showPriceData) {
+        loadPriceData(coin, selectedChartRange);
+    }
+    
     // Add event listener for chart range selection
     $('#chartRangeSelect').off('change').on('change', function() {
         const rangeValue = $(this).val();
